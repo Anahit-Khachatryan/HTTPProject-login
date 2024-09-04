@@ -1,0 +1,23 @@
+<p>Register Form!</p>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <input type="text" placeholder="first name" formControlName="firstName">
+    </div>
+    <div class="form-control">
+        <input type="text" placeholder="last name" formControlName="lastName">
+    </div>
+    <div class="form-control">
+        <input type="email" placeholder="email" formControlName="email">
+    </div>
+    <div class="form-control">
+        <input type="password" placeholder="password" formControlName="password">
+    </div>
+    <button>Register</button>
+    <div>
+        <a routerLink="/login">Login</a>
+      </div>
+</form>
+
+    {{errors}}
+

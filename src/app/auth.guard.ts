@@ -12,3 +12,6 @@ export const authGuard: CanActivateFn = (route, state) => {
   // return false;
   return router.parseUrl('/login') //veradardznum e url tree, ete paymanin chi bavararum gres orinak /home ktani /logini ej
 };
+
+//guardy ashxatum e minchev route bacely, 
+//interceptery request arecink mtnum e dranc mej requesti objecti mej popoxutyunera teghi unenum nor backendin e gnum

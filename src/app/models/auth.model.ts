@@ -25,6 +25,6 @@ export class LoginDto {
 }
 
 export interface LoginResponse {
-  accessToken: string;
+  token: string;
   refreshToken: string
 }

@@ -1,2 +1,16 @@
 <p>home works!</p>
+@for(user of users; track user) {
+   <div>
+    <img ngSrc="user.avatar">
+    <p>{{user.email}}</p>
+    <p>{{user.first_name}}</p>
+    <p>{{user.last_name}}</p>
+    <p>{{user.id}}</p>
+   </div>
+}
+
+
+
+
+
 <button (click)="onLogout()">Logout</button>

@@ -11,6 +11,6 @@ export class HomeService {
   constructor() { }
 
   getUsers() {
-    return this.httpClient.get(`${environment.apiUrl}/users`)
+    return this.httpClient.get<any>(`${environment.apiUrl}/users`)
   }
 }

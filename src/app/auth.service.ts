@@ -20,6 +20,7 @@ export class AuthService {
     // return this.httpClient.post<LoginResponse>('http://localhost:3000/auth/login', loginDto)
     return this.httpClient.post<LoginResponse>(`${this.url}/login`, loginDto)
     .pipe(tap((data: LoginResponse) => {
+      console.log('data', data)
       localStorage.setItem('auth', JSON.stringify(data));
     }))
 

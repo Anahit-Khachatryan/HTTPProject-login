@@ -36,4 +36,18 @@ export class AuthService {
     localStorage.removeItem('auth');
     this.router.navigate(['/login']);
   }
+
+  verifyAccount(activationToken: string): Observable<any> {
+     return this.httpClient.get<void>(`${this.url}/verify-account`, {
+      params: {
+        activationToken
+      }
+     }).pipe(tap(() => {}))
+  }
 }
+
+
+// {
+//   "email": "eve.holt@reqres.in",
+//   "password": "cityslicka"
+// } //mailinator.com
